@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres:15
+    env_file:
+      - db.env
+    ports:
+      - "5432:5432"
+
+  java-server:
+    build: web-server
+    restart: always
+    env_file:
+      - db.env
+    ports:
+      - "8080:8080"
+
+  nodejs-server:
+    build: nodejs-server
+    restart: always
+    env_file:
+      - db.env
+    ports:
+      - "8090:8080"
+    depends_on:
+      - postgres
