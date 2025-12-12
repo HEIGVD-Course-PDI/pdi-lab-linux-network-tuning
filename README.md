@@ -1,5 +1,5 @@
-Linux Network Tuning Lab - SOLUTION
-===================================
+Linux Network Tuning Lab
+========================
 
 In this lab, your task is to improve the network performance of Linux machines (server and client) by tuning various Linux kernel parameters. You will use benchmarking tools to measure the performance before and after applying the tuning parameters.
 
