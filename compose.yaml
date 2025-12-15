@@ -7,7 +7,7 @@ services:
       - "5432:5432"
 
   java-server:
-    build: web-server
+    build: java-server
     restart: always
     env_file:
       - db.env
